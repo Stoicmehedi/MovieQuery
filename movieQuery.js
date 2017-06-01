@@ -5,19 +5,26 @@ var movieList = [
   { title: "Gladiator", year: "2000", length: 155, rating: "8.5", genre: "historical" },
   { title: "The Patriot", year: "2000", length: 165, rating: "7.1", genre: "historical" },
   { title: "The Matrix Reloaded”, year: “2003", length: 138, rating: "7.2", genre: "sci-fi" }
+
 ];
 
 function getMovieTitle( index ){
-  //add code
+
+  return movieList[index].year;
+
 }
 
 console.log(getMovieTitle(3));
 
 function addMovie( movie ){
-  //add code
+
+  movieList.push(movie)
+
+return movieList;
+
 }
 
-var newMovie = {};
+var newMovie = {title:"the boss baby",year:"2017",length:125,rating :"8.9",genre:"Animation"};
 console.log(addMovie(newMovie));
 
 function movieByRating(){
